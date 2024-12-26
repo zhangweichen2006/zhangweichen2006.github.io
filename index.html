@@ -70,6 +70,19 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: transform 0.2s ease-in-out;
         }
+        .project-card.with-image {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .project-content {
+            flex: 1;
+        }
+        .project-image {
+            width: 200px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
         .project-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -175,12 +188,15 @@
             </div>
         </div>
 
-        <div class="project-card">
-            <div class="project-title">Multi-Modality Domain Adaptation</div>
-            <div class="project-description">Progressive Modality Cooperation for Multi-Modality Domain Adaptation with missing modality generative model.</div>
-            <div class="publication">
-                <i class="fas fa-journal-whills"></i><strong>[T-IP 21]</strong> <strong>Zhang, W.,</strong> Xu, D., Ouyang, W. & Zhang, J. "Progressive Modality Cooperation for Multi-Modality Domain Adaptation."
+        <div class="project-card with-image">
+            <div class="project-content">
+                <div class="project-title">Multi-Modality Domain Adaptation</div>
+                <div class="project-description">Progressive Modality Cooperation for Multi-Modality Domain Adaptation with missing modality generative model.</div>
+                <div class="publication">
+                    <i class="fas fa-journal-whills"></i><strong>[T-IP 21]</strong> <strong>Zhang, W.,</strong> Xu, D., Ouyang, W. & Zhang, J. "Progressive Modality Cooperation for Multi-Modality Domain Adaptation."
+                </div>
             </div>
+            <img src="assets/PMC.png" alt="Progressive Modality Cooperation" class="project-image">
         </div>
 
         <div class="project-card">
@@ -203,7 +219,7 @@
     <div class="section">
         <h2 class="section-title">Visitors</h2>
         <div class="visitor-map" style="text-align: center; margin: 20px 0;">
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hHtpeQlF__8m3bsTZdNLQrt4v1wHnXfYP5UvodL9zdo"></script>
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hHtpeQlF__8m3bsTZdNLQrt4v1wHnXfYP5UvodL9zdo&w=200"></script>
         </div>
     </div>
 
