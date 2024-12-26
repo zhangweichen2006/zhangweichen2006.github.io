@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cevin Zhang - ML/DL Researcher</title>
+    <title>Weichen Zhang - ML/DL Researcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -16,6 +17,15 @@
         .header {
             text-align: center;
             margin-bottom: 2em;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1em;
+            display: block;
+            object-fit: cover;
+            border: 3px solid #2c3e50;
         }
         h1 {
             color: #2c3e50;
@@ -41,18 +51,23 @@
             margin: 2em 0;
         }
         .social-links a {
-            margin: 0 10px;
+            margin: 0 15px;
             color: #2c3e50;
             text-decoration: none;
+            font-size: 1.2em;
         }
         .social-links a:hover {
-            text-decoration: underline;
+            color: #3498db;
+        }
+        .social-links i {
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Cevin Zhang</h1>
+        <img src="assets/profile.jpg" alt="Weichen Zhang" class="profile-photo">
+        <h1>Weichen Zhang</h1>
         <div class="contact-info">
             <p>Machine Learning and Deep Learning Researcher</p>
             <p>Postdoctoral Researcher at the University of Sydney</p>
@@ -86,9 +101,9 @@
     </div>
 
     <div class="social-links">
-        <a href="https://github.com/zhangweichen2006" target="_blank">[GitHub]</a>
-        <a href="https://scholar.google.com/citations?user=WaIgpgQAAAAJ&hl=en" target="_blank">[Google Scholar]</a>
-        <a href="/assets/CV.pdf" target="_blank">[Curriculum Vitae]</a>
+        <a href="https://scholar.google.com/citations?user=WaIgpgQAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
+        <a href="https://github.com/zhangweichen2006" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="/assets/CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Curriculum Vitae</a>
     </div>
 </body>
 </html>
