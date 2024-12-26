@@ -83,6 +83,16 @@
             border-radius: 4px;
             object-fit: cover;
         }
+        .project-images {
+            display: flex;
+            gap: 10px;
+            width: 400px;
+        }
+        .project-images img {
+            width: 195px;
+            border-radius: 4px;
+            object-fit: contain;
+        }
         .project-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -153,39 +163,54 @@
     <div class="section">
         <h2 class="section-title">Featured Projects & Publications</h2>
 
-        <div class="project-card">
-            <div class="project-title">Precise 3D Mesh Reconstruction (Bodymapp)</div>
-            <div class="project-description">Zero-to-One World-Class depth-only (protect privacy) mobile App for accurate scanning, reconstructing, and measuring the human body on various iOS devices (iPhones/iPads).</div>
-            <div class="publication">
-                <i class="fas fa-patent"></i><strong>[US Patent]</strong> <strong>Zhang, W.,</strong> et al. "Methods for generating a partial three-dimensional representation of a person." (in submission)
+        <div class="project-card with-image">
+            <div class="project-content">
+                <div class="project-title">Precise 3D Mesh Reconstruction (Bodymapp)</div>
+                <div class="project-description">Zero-to-One World-Class depth-only (protect privacy) mobile App for accurate scanning, reconstructing, and measuring the human body on various iOS devices (iPhones/iPads).</div>
+                <div class="publication">
+                    <i class="fas fa-patent"></i><strong>[US Patent]</strong> <strong>Zhang, W.,</strong> et al. "Methods for generating a partial three-dimensional representation of a person." (in submission)
+                </div>
+            </div>
+            <div class="project-images">
+                <img src="assets/Bodymapp.png" alt="Bodymapp Application">
+                <img src="assets/Bodymesh.png" alt="Body Mesh Reconstruction">
             </div>
         </div>
 
-        <div class="project-card">
-            <div class="project-title">Cross-domain 3D Object Detection</div>
-            <div class="project-description">Pioneering 3D point cloud based Cross-environment Object Detection in Autonomous Driving Scenarios.</div>
-            <div class="publication">
-                <i class="fas fa-award"></i><strong>[CVPR 21]</strong> <strong>Zhang, W.,</strong> Li, W., & Xu, D. "SRDAN: Scale-aware and range-aware domain adaptation network for cross-dataset 3D object detection."
+        <div class="project-card with-image">
+            <div class="project-content">
+                <div class="project-title">Cross-domain 3D Object Detection</div>
+                <div class="project-description">Pioneering 3D point cloud based Cross-environment Object Detection in Autonomous Driving Scenarios.</div>
+                <div class="publication">
+                    <i class="fas fa-award"></i><strong>[CVPR 21]</strong> <strong>Zhang, W.,</strong> Li, W., & Xu, D. "SRDAN: Scale-aware and range-aware domain adaptation network for cross-dataset 3D object detection."
+                </div>
             </div>
+            <img src="assets/SRDAN.jpg" alt="SRDAN Architecture" class="project-image">
         </div>
 
-        <div class="project-card">
-            <div class="project-title">Cross-domain Object Recognition</div>
-            <div class="project-description">Collaborative and Adversarial Network for Unsupervised Domain Adaptation with pioneering use of adaptive pseudo labels and adversarial learning (GAN).</div>
-            <div class="publication">
-                <i class="fas fa-patent"></i><strong>[US Patent 21]</strong> <strong>Zhang, W.,</strong> et al. "Method for training deep neural network and apparatus." U.S. Patent Application No. 17/033,316.
+        <div class="project-card with-image">
+            <div class="project-content">
+                <div class="project-title">Cross-domain Object Recognition</div>
+                <div class="project-description">Collaborative and Adversarial Network for Unsupervised Domain Adaptation with pioneering use of adaptive pseudo labels and adversarial learning (GAN).</div>
+                <div class="publication">
+                    <i class="fas fa-patent"></i><strong>[US Patent 21]</strong> <strong>Zhang, W.,</strong> et al. "Method for training deep neural network and apparatus." U.S. Patent Application No. 17/033,316.
+                </div>
+                <div class="publication">
+                    <i class="fas fa-award"></i><strong>[CVPR 18]</strong> <strong>Zhang, W.,</strong> Ouyang, W., Li, W., & Xu, D. "Collaborative and adversarial network for unsupervised domain adaptation."
+                </div>
             </div>
-            <div class="publication">
-                <i class="fas fa-award"></i><strong>[CVPR 18]</strong> <strong>Zhang, W.,</strong> Ouyang, W., Li, W., & Xu, D. "Collaborative and adversarial network for unsupervised domain adaptation."
-            </div>
+            <img src="assets/CAN.png" alt="CAN Architecture" class="project-image">
         </div>
 
-        <div class="project-card">
-            <div class="project-title">Cross-domain Cross-modality Recognition and Detection</div>
-            <div class="project-description">Self-paced Collaborative and Adversarial Network with mutual multi-modal adaptability.</div>
-            <div class="publication">
-                <i class="fas fa-journal-whills"></i><strong>[T-PAMI 19]</strong> <strong>Zhang, W.,</strong> Xu, D., Ouyang, W., & Li, W. "Self-paced collaborative and adversarial network for unsupervised domain adaptation."
+        <div class="project-card with-image">
+            <div class="project-content">
+                <div class="project-title">Cross-domain Cross-modality Recognition</div>
+                <div class="project-description">Self-paced Collaborative and Adversarial Network with mutual multi-modal adaptability.</div>
+                <div class="publication">
+                    <i class="fas fa-journal-whills"></i><strong>[T-PAMI 19]</strong> <strong>Zhang, W.,</strong> Xu, D., Ouyang, W., & Li, W. "Self-paced collaborative and adversarial network for unsupervised domain adaptation."
+                </div>
             </div>
+            <img src="assets/SPCAN.png" alt="SPCAN Architecture" class="project-image">
         </div>
 
         <div class="project-card with-image">
@@ -199,12 +224,15 @@
             <img src="assets/PMC.png" alt="Progressive Modality Cooperation" class="project-image">
         </div>
 
-        <div class="project-card">
-            <div class="project-title">Cross-domain Model Compression</div>
-            <div class="project-description">Model Compression using Progressive Channel Pruning which is proven effective combining transfer learning.</div>
-            <div class="publication">
-                <i class="fas fa-journal-whills"></i><strong>[T-CSVT 20]</strong> Guo, J., <strong>Zhang, W.,</strong> Ouyang, W., & Xu, D. "Model Compression using Progressive Channel Pruning."
+        <div class="project-card with-image">
+            <div class="project-content">
+                <div class="project-title">Cross-domain Model Compression</div>
+                <div class="project-description">Model Compression using Progressive Channel Pruning which is proven effective combining transfer learning.</div>
+                <div class="publication">
+                    <i class="fas fa-journal-whills"></i><strong>[T-CSVT 20]</strong> Guo, J., <strong>Zhang, W.,</strong> Ouyang, W., & Xu, D. "Model Compression using Progressive Channel Pruning."
+                </div>
             </div>
+            <img src="assets/PCP.png" alt="PCP Architecture" class="project-image">
         </div>
 
         <div class="project-card">
